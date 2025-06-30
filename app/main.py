@@ -1,9 +1,6 @@
 def main() -> None:
     file_name = input("Enter name of the file: ") + ".txt"
     with open(file_name, "a") as file:
-        lines = f.read().splitlines()
-        actual_content = lines[2:]
-        assert actual_content == content
         file.write(f'File name: "{file_name}"\n')
         file.write("File content:\n")
         while True:
