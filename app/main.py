@@ -4,9 +4,7 @@ def main() -> None:
         file.write(f'File name: "{file_name}"\n')
         file.write("File content:\n")
         while True:
-            new_line = input(
-                "Enter new line of content (type 'stop' to finish): "
-            )
+            new_line = input("Enter new line of content: ")
             if new_line.lower() == "stop":
                 break
             file.write(f"{new_line}\n")
